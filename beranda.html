@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="beranda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="menu">
+                <h2 class="title">Menu</h2>
+                <div class="list">
+                    <h3 class="deskripsi">LIST</h3>
+                    <button class="newlist" onclick="newlist()"><i class="fa-solid fa-plus"></i> Add New List</button>
+                </div>
+                <div class="task">
+                    <h3 class="deskripsi">TASK</h3>
+                    <button class="newlist" onclick="calendar"> <i class="fa-solid fa-calendar-days"></i>
+                        Calendar</button>
+                    <button class="newlist" onclick="upcoming">>> Up Coming</button>
+                </div>
+            </div>
+            <div class="container-2">
+                <h1 class="judul">TIARA</h1>
+                <!-- new list -->
+                <div class="content">
+                    <div id="content-new">
+                        <div id="list">
+                            <textarea name="" id="userinp" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="text">
+                            <input type="text" id="input" placeholder="Start Typing">
+                            <button id="btn" onclick="save()">Save</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- new list end -->
+            </div>
+        </div>
+    </div>
+    <script src="beranda.js"></script>
+</body>
+
+</html>
