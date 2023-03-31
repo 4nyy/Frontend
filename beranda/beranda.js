@@ -4,20 +4,16 @@ const list = document.getElementById("list")
 
 contentNew.style.display = "none"
 function newlist() {
-    contentNew.style.display = "block"
+    if (contentNew.style.display === "none"){
+        contentNew.style.display = "block"
+    }else{
+        contentNew.style.display = "none"
+    }
 }
-
-const data = []
-const pemasukanData = () => {
-    data.push(input.value)
-    console.log(data)
-}
-
 function save() {
     if (input.value) {
-        pemasukanData()
         let div = document.createElement("div")
-        div.style.width = "300px"
+        div.style.width = "90%"
         div.style.borderRadius = "10px"
         div.style.padding = "20px"
         div.style.margin = "10px"
@@ -29,8 +25,7 @@ function save() {
         li.appendChild(document.createTextNode(input.value));
         div.append(li)
         input.value = "";
-    }else if (input.value == ""){
+    } else if (input.value == "") {
         alert("input value nya kosong")
     }
 }
-
